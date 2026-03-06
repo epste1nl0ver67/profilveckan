@@ -1,3 +1,13 @@
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Låter knapparna hoppa ner en rad på små skärmar */
+    gap: 15px; /* Minskat från 25px för att passa mobiler bättre */
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    padding: 15px;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -33,6 +43,11 @@ nav a:hover {
     background: orange;
     color: black;
     transform: translateY(-2px);
+}
+
+nav a.active { /* Så man ser vilken sida man är på */
+    background: orange;
+    color: black;
 }
 
 section {
@@ -75,4 +90,12 @@ section {
 .hero p {
     font-size: 20px;
     color: #ccc;
+}
+
+/* Mobil */
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
 }
