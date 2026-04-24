@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $titel = $_POST["titel"];
     $beskrivning = $_POST["beskrivning"];
-    $sql = "INSERT INTO tabell1 (title, description) VALUES ($test, $beskrivning)";
+    $sql = "INSERT INTO tabell1 (name, password) VALUES ('$titel', '$beskrivning')";
 
     $conn->query($sql);
 }
