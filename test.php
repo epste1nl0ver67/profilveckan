@@ -1,16 +1,16 @@
 <?php
+
 $conn = new mysqli("localhost", "epste1nl0ver67", "Epste1nLever67!", "databas1");
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $password = $_POST["password"];
 
-echo "Connected successfully!";
+    $titel = $_POST["titel"];
+    $beskrivning = $_POST["beskrivning"];
+    $sql = "INSERT INTO tabell1 (title, description) VALUES ($test, $beskrivning)";
+
+    $conn->query($sql);
 }
+
 ?>
 
 <form method="POST">
