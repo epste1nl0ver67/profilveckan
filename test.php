@@ -19,3 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <textarea name="beskrivning" rows="5" cols="40"></textarea><br><br>
     <input type="submit" value="Skicka">
 </form>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulär</title>
+</head>
+<body>
+  <form method="POST" action="test.php">
+    Username: <input type="text" name="username" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Skicka">
+  </form>
+</body>
+</html>
