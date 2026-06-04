@@ -4,8 +4,8 @@ $conn = new mysqli("localhost", "epste1nl0ver67", "Epste1nLever67!", "databas1")
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $Username= $_POST["Username"];
-    $Password = $_POST["Password"];
+    $Username= $_POST["username"];
+    $Password = $_POST["password"];
     $sql = "INSERT INTO tabell1 (name, password) VALUES ('$Username', '$Password')";
 
     $conn->query($sql);
